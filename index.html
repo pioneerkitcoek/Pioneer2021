@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesocial.css">
+  
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+    rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<style>
+    
+      #Ad{
+
+height : 300px
+
+}
+    .navbar-dark{
+   
+        z-index: 9999;
+    }
+
+    .main img{
+        width: 100%;
+        
+    }
+
+    html,body{
+        overflow-x: hidden;
+        width: 100%;
+        background-color: black;
+    }
+    .containerabout{
+        align-items: center;
+    }
+    .containerabout h3{
+        background-color: rgba(0, 139, 139, 0.425);
+        color: white;
+        text-align: center;
+        margin-top: 10px;
+        padding: 10px 0px;
+        border-radius: 20px;
+    }
+
+    .containerabout p{
+        background-color: rgba(255, 255, 255, 0.548);
+        padding: 0px 10px ;
+        font-weight: 500;
+        border-radius: 20px;
+    }
+
+    #kitimg{
+       opacity: 0.8;
+        margin-top: 10px;
+    }
+
+    .card,
+    .card .card-body,
+    .card .card-body .card-title{
+        opacity: 0.7;
+    }
+
+    .card:hover,
+    .card .card-body:hover,
+    .card .card-body .card-title:hover{
+        opacity: 1;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    .pdf{
+   
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    
+    .pdf a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    color: rgb(252, 247, 247);
+    background: rgba(38, 126, 126, 0.678);
+    width: 600px;
+    padding: 20px 0px;
+    text-align: center;
+    border-radius: 10px;
+}
+.pdf a span{
+    position: relative;
+    width: 1.5rem;
+    
+}
+.pdf a span:after{
+    content: '\21D3';
+    font-size: 1.5rem;
+    position: absolute;
+    padding-left: 10px;
+    animation: down 1s linear infinite;
+}
+@keyframes down{
+    from{
+        top: -10px;
+        opacity: 0;
+    }
+    to{
+        top: 10px;
+        opacity: 1;
+    }
+}
+
+.register a{
+  background-color: rosybrown;
+  color: black;
+  display: block;
+  font-weight: 500;
+  border: 3px solid rgba(252, 252, 252, 0.644);
+ 
+  cursor: pointer;
+}
+.register a:hover{
+  text-decoration: underline;
+}
+
+
+</style>
+</head>
+
+
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark"> <!--put bg color-->
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav">
+            <a href="#ABOUT" class="nav-item nav-link active"><i class="fa fa-home"></i> Homepage</a>
+            <a href="#EVENTS" class="nav-item nav-link active"><i class="fa fa-calendar"></i> Events</a>
+        </div>
+      
+    </div>
+</nav>
+<div class="main">
+<img src="images/mainp.jpg" alt="Main Image" >
+</div>
+
+<a name="ABOUT"></a>
+<div class="containerabout">
+    <div class="row">
+        <div class="col-md-3" id="kitimg">
+            <img src="images/kit3.png" style="border-radius: 30px; width: 100%;"  alt="KIT College" >
+        </div>
+        <div class="col-md-9">
+            <h3 >ABOUT KIT</h3>
+           <p>Premier Institute in engineering & Technology established in 1983 by group of visionary industrialist, professionals and educationalists. The vast exposure and experience of its founders has helped Kolhapur institute of Technology’s College of Engineering Kolhapur to establish its identity as an Institute of repute in the field of Engineering and Management education. The first among the self-financed engineering college in Maharashtra.
+            The Institute has been awarded “A Grade Status with CGPA 3.12” by The National Assessment and Accreditation Council (NAAC), Bengaluru. 
+        </p>
+        </div>
+       
+    </div>
+   
+</div>
+<a name="EVENTS"></a>
+<div class="register">
+    
+    <img style="float: inline-end;"  src="images/final.png" class="img-fluid" alt="helpline">
+   
+   
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeA0KewczkthcNS4t8KLmSaBPyU0ejFiR6gVmnzUECw-loq9w/viewform" class="btn btn-primary">Click here to Register for Abhivyakti.</a>
+   
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScfVcoZDjFzqLnHjde6fIz4SI3JAbBBjrAYxHrzNuZ_mtyBDA/viewform" class="btn btn-primary">Click here to Register for Prakalp. </a>
+    
+    <br>
+    <br>
+  </div>
+
+  <div class="pdf">
+    <a href="pdf.html" download="pdffile.pdf" id="download">📝Click here to download Event Details<span></span></a>
+
+    <script>
+        let button = document.querySelector("body a");
+        button.addEventListener("click",()=>{
+            const span = document.querySelector("a span");
+            button.style.paddingRight = '10px';
+            span.style.visibility = "visible";
+            setTimeout(()=>{
+                span.style.visibility="hidden";
+                button.style.transition =".3s ease-in-out";
+                button.style.paddingRight= "0px";
+            },3000);
+        })
+    </script>
+   </div>
+   <br><br>
+    <div class="row">
+      <div class="col-sm-4">
+        
+       
+  
+        <div class="card" style="border: 10px solid rgba(27, 100, 100, 0.849);">
+          <div class="card-body">
+            <h3 class="card-title" style="text-align: center;">TecQuiz  </h3>
+            <img style="float: inline-end;" id= "sd" class="card-img-top" src="images/Tech-Quiz.png" alt="Card image" style="width:90%">
+            <h3 class="card-title">Dept. of Biotechnology Engineering  </h3>
+            <p class="card-text">
+              <h6> <strong>Theme: General Technical Quiz based on engineering knowledge </strong></h6>
+              <h6>Offline mode📌  Date 📅- 20 March, 2021 </h6>
+              <h5>Entry fees: 30/-</h5>
+              <h6><strong>
+              <p>
+                Email 📧 <a href = "mailto: engeners@kitcoek.in">engeners@kitcoek.in</a>
+              </p></strong></h6>
+            <p> 
+              <h6>Faculty Co-ordinator: Prof. Mrs.B.S.Navare <a href="tel:9881253136" ><br>(Call📞 9881253136</a>)</h6>
+            </p>
+            <p> 
+              <h6>Student Co-ordinator: Nehal Choudhari <a href="tel:8975125954"><br>(Call📞8975125954 </a>)</h6>
+            </p>
+            <p ><strong>Cash prize -🏆 1st prize- Rs.1000/-</strong> </p>
+            <p><strong>Cash prize -🏆 2st prize- Rs.500/-</strong> </p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWU9RarG2IqOjmPIAPv4f6Ql5w-v5oYP65WO-sDfT8R5uRmg/viewform?vc=0&c=0&w=1&flr=0&usp=mail_form_link" class="btn btn-primary" style="width: 100%;">Click   here to Register </a>
+              
+           
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card" style="border: 10px solid rgba(27, 100, 100, 0.849);">
+          <div class="card-body">
+            
+            <h3 class="card-title" style="text-align: center;">KAIZEN  </h3>
+             <img style="float: inline-end;"  id= "sd" class="card-img-top" src="images/civil.webp" alt="Card image" style="width:65%">
+             <h3 class="card-title">Dept. of Civil Engineering </h3>
+            <p class="card-text">
+              <h6> <strong>Theme: Poster making Competition </strong></h6>
+              <h6>Offline mode📌  Date 📅- 20 March, 2021 </h6>
+              <h5>Entry fees: 200/-</h5>
+              <h6>
+                <br>
+              <p>
+                <strong> Online Registration  Email 📧  at <a href = "mailto: cesakitcoek@gmail.com">mailto: cesakitcoek@gmail.com</a>
+              </p></strong></h6>
+            <p> 
+              <h6>Faculty Co-ordinator: Prof. G.A.Chavan <a href="tel:9665587101"><br>(Call📞 9665587101</a>)</h6>
+            </p>
+            <p> 
+              <h6>Student Co-ordinator: Ayush Jadhav <a href="tel:8888765484"><br>(Call📞8888765484 </a>)</h6>
+            </p>
+            <p ><strong>Cash prize -🏆 1st prize- Rs.2000/-</strong> </p>
+            <p><strong>Cash prize -🏆 2st prize- Rs.1000/-</strong> </p>
+           
+          <a href="https://forms.gle/Fw8deGHCCNJGbqnV8" class="btn btn-primary" style="width: 100%;">Click here to Register </a>
+          <br>
+          </div>
+        </div>
+          
+      </div>
+      <div class="col-sm-4">
+        
+        
+  
+        <div class="card" style="border: 10px solid rgba(27, 100, 100, 0.849);">
+          <div class="card-body">
+            <h3 class="card-title" style="text-align: center;">Brain Hunter  </h3>
+            <img  id= "sd" class="card-img-top" src="images/brain.webp" alt="Card image" style="width:60%">
+            <h3 class="card-title">Dept. of Electrical Engineering  </h3>
+            <p class="card-text">
+              <h6> <strong>Theme: How good you know your home</strong></h6>
+              <h6>Offline mode📌  Date 📅- 20 March, 2021 </h6>
+              <h5>Entry fees: 50/-</h5>
+              <h6><strong>
+              <p>
+     
+                Online Registration  Email 📧  at <a href = "mailto: elesakitcoek@gmail.com.com">elesakitcoek@gmail.com</a>
+              </p><strong></h6>
+            <p> 
+              <h6>Faculty Co-ordinator: Prof.Mrs.Shwetha.S.H <a href="tel:8904331106"><br>(Call📞 8904331106</a>)</h6>
+            </p>
+            <p> 
+              <h6>Student Co-ordinator: Amey Phatak  <a href="tel:9403755135"><br>(Call📞 9403755135 </a>)</h6>
+            </p>
+            <p ><strong>Cash prize -🏆 1st prize- Rs.1000/-</strong> </p>
+            <p><strong>Cash prize -🏆 2st prize- Rs.500/-</strong> </p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfhlGkLJK9I6tWIZbDKgPR6YOj8x3C3TzSitDoGW2foJ_9X7A/viewform?usp=sf_link" class="btn btn-primary" style="width: 100%;">Click   here to Register </a>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  <br>
+  <br>
+  
+    <div class="row">
+      
+      <div class="col-sm-4">
+        <div class="card" style="border: 10px solid rgba(27, 100, 100, 0.849);" >
+          <div class="card-body">
+            <h1 class="card-title" style="text-align: center;">TECHNO QUIZ</h1>
+             <img  style="width: 100%;   "  id= "sd" class="" src="images/drw.jpg" alt="Card image" style="width:55%">
+             <h3 class="card-title">Dept. of Mechanical Engineering </h3>
+             <br>
+             <h6> <strong>Theme: Technical quiz on engineering drawing.  </strong></h6>
+             <h6>Offline mode📌  Date 📅- 19 March, 2021 </h6>
+             <h5>Entry fees: 50/-</h5>
+             <h6><strong>
+             <p>
+              Online Registration  Email 📧  at <a href = "mailto: kitmesa2021@gmail.com">kitmesa2021@gmail.com</a>
+             </p></strong></h6>
+           <p> 
+             <h6>Faculty Co-ordinator: Prof.J.S Bhat <a href="tel:9518595512"><br>(Call📞 9518595512</a>)</h6>
+           </p>
+           <p> 
+             <h6>Student Co-ordinator: Dhiraj Pawar  <a href="tel:7721871987"><br>(Call📞7721871987"</a>)</h6>
+           </p>
+           <p ><strong>Cash prize -🏆 1st prize- Rs.1000/-</strong> </p>
+           <p><strong>Cash prize -🏆 2st prize- Rs.500/-</strong> </p>
+           <a href="https://docs.google.com/forms/d/e/1FAIpQLScZWLkJ2bvVC48Z-0JyYBwF-mtR7NrUuZrZhn1whsPi_78B2g/viewform" class="btn btn-primary" style="width: 100%;">Click   here to Register </a>
+          
+         
+         </div>
+       </div>
+     </div>
+      <div class="col-sm-4">
+        
+        
+  
+        <div class="card" style="border: 10px solid rgba(27, 100, 100, 0.849);">
+          <div class="card-body">
+            <h2 class="card-title" style="text-align: center;">ENVISION </h2>
+            <img  style="float: inline-end;"  id= "sd" class="card-img-top" src="images/presen.png" alt="Card image" style="width:60%">
+            <h3 class="card-title">Dept. of Environmental Engineering  </h3>
+            <h6> <strong>Theme:Powerpoint, presentation : Sustainable sanitation approches , waste management , water conservation & managements. </strong></h6>
+            <h6>Offline  mode📌  Date 📅- 19 March, 2021 </h6>
+            <h5>Entry fees- 100/-</h5>
+            <h6><strong><p>
+            <p>
+              Online Registration  Email 📧  at <a href = "mailto: en4s.kitcoek@gmail.com">en4s.kitcoek@gmail.com</a>
+            </p></strong></h6>
+          <p> 
+            <h6>Faculty Co-ordinator: Prof. Er.S.S.Joshi <a href="tel:9028486124"><br>(Call📞902848612 </a>)</h6>
+          </p>
+          <p> 
+            <h6>Student Co-ordinator: Rukma Prabhu <a href="tel:9545903906"><br>(Call📞9545903906 </a>)</h6>
+          </p>
+          <p ><strong>Cash prize -🏆 1st prize- Rs.2000/-</strong> </p>
+          <p><strong>Cash prize -🏆 2st prize- Rs.1000/-</strong> </p>
+          <a href="https://forms.gle/nQV9Yz3Ym1hU34F28" class="btn btn-primary" style="width: 100%;">Click   here to Register </a>
+          
+        
+        </div>
+      </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card" style="border: 10px solid rgba(27, 100, 100, 0.849);">
+          <div class="card-body">
+            <h2 class="card-title" style="text-align: center;">THE ROYAL C  </h2>
+             <img   style="height:210px;" id= "Ad" class="card-img-top" src="images/cse c.jpg" alt="Card image" style="width:100">
+             <h3 class="card-title">Dept. of Computer Science Engineering  </h3>
+             <br>
+             <h6> <strong>Theme: 'C' Programming Competition </strong></h6>
+             <h6>Offline mode📌  Date 📅- 19 March, 2021 </h6>
+             <h5>Entry fees- 100/-</h5>
+             <h6><strong><p>
+             <p>
+              Online Registration  Email 📧  at <a href = "mailto: acses.kitcoek@gmail.com">acses.kitcoek@gmail.com</a>
+             </p></strong></h6>
+           <p> 
+             <h6>Faculty Co-ordinator: Prof .A .R Desai<a href="tel:9881755447"><br>(Call📞 9881755447</a>)</h6>
+           </p>
+           <p> 
+             <h6>Student Co-ordinator: Mandar Ladage <a href="tel:7720850372"><br>(Call📞7720850372 </a>)</h6>
+           </p>
+           <p ><strong>Cash prize -🏆 1st prize- Rs.3000/-</strong> </p>
+           <p><strong>Cash prize -🏆 2st prize- Rs.2000/-</strong> </p>
+           <a href="https://forms.gle/SZnwEmM32c9ZoQF98" class="btn btn-primary" style="width: 100%;">Click   here to Register </a>
+          
+          
+         </div>
+       </div>
+      </div>
+    </div>
+    </div>
+  
+    <br>
+    <br>
+  
+  
+    
+  <div class="row">
+    <div class="col-sm-3">
+      
+      
+  
+      <div class="card" style="border: 10px solid rgba(27, 100, 100, 0.849);">
+        <div class="card-body" >
+          <h1 class="card-title" style="text-align: center;">JAVA HEIST  </h1>
+          <img  style="float: inline-end;"   id= "sd" class="card-img-top" src="images/javaimg.jpg" alt="Card image" style="width:60%">
+          <h3 class="card-title">Dept. of Computer Science Engineering  </h3>
+          <br>
+          <h6> <strong>Theme: 'Java' programming Competition </strong></h6>
+          <h6>Offine  mode📌  Date 📅- 20 March, 2021 </h6>
+          <h5>Entry fees: 100/-</h5>
+          <h6><strong><p>  
+          
+            <p>
+              Online Registration  Email 📧  at <a href = "mailto: acses.kitcoek@gmail.com">acses.kitcoek@gmail.com</a>
+             </p></strong></h6>
+           <p> 
+             <h6>Faculty Co-ordinator: Prof .A .R Desai<a href="tel:9881755447"><br>(Call📞 9881755447</a>)</h6>
+           </p>
+           <p> 
+             <h6>Student Co-ordinator: Divya Tawade <a href="tel:8208751254"><br>(Call📞8208751254</a>)</h6>
+           </p>
+           <p ><strong>Cash prize -🏆 1st prize- Rs.3000/-</strong> </p>
+           <p><strong>Cash prize -🏆 2st prize- Rs.2000/-</strong> </p>
+          
+           <a href="https://forms.gle/SZnwEmM32c9ZoQF98" class="btn btn-primary" style="width: 100%;">Click   here to Register </a>
+          
+      </div>
+    </div>
+    </div>
+    <div class="col-sm-3" >
+      <div class="card" style="border: 10px solid rgba(27, 100, 100, 0.849);"> 
+        <div class="card-body">
+          <h1 class="card-title" style="text-align: center;">INT-ERA  </h1>
+           <img style="width: 72%;" id= "sd" class="" src="images/intetr.jpg" alt="Card image" style="width:55%">
+           <h3 class="card-title">Dept. of Mechanical Engineering </h3>
+           <br>
+           <h6> <strong>Theme: Facing the Interview </strong></h6>
+           <h6>Offline mode📌  Date 📅- 20 March, 2021 </h6>
+           <h5>Entry fees: 50/-</h5>
+           <h6><strong><p> 
+             
+           <p>
+            <p>
+              Online Registration  Email 📧  at <a href = "mailto: kitmesa2021@gmail.com">kitmesa2021@gmail.com</a>
+             </p></strong></h6>
+           <p> 
+             <h6>Faculty Co-ordinator: Prof. J.S Bhat <a href="tel:9518595512"><br>(Call📞 9518595512</a>)</h6>
+           </p>
+           <p> 
+             <h6>Student Co-ordinator: Parinita Girmal  <a href="tel:8857846678"><br>(Call📞8857846678</a>)</h6>
+           </p>
+           <p ><strong>Cash prize -🏆 1st prize- Rs.1000/-</strong> </p>
+           <p><strong>Cash prize -🏆 2st prize- Rs.500/-</strong> </p>
+           <br>
+           <a href="https://docs.google.com/forms/d/e/1FAIpQLScZWLkJ2bvVC48Z-0JyYBwF-mtR7NrUuZrZhn1whsPi_78B2g/viewform" class="btn btn-primary" style="width: 100%;">Click   here to Register </a>
+       </div>
+     </div>
+    </div>
+    <div class="col-sm-3">
+      
+      
+  
+      <div class="card" style="border: 10px solid rgba(27, 100, 100, 0.849);">
+        <div class="card-body">
+          <h3 class="card-title" style="text-align: center;">HIRED OR FIRED  </h3>
+          
+          <img   style= "height:160px"; id= "sd" class="card-img-top" src="images/hired.jpeg" alt="Card image" style="width:60%">
+          <h4 class="card-title">Dept. of Electronics and Telecommunication  Engineering</h4>
+          <h6> <strong>Theme: Moc Campus Placement </strong></h6>
+          <h6>Offline mode📌  Date 📅- 20 March, 2021 </h6>
+          <h5>Entry fees: 50/-</h5>
+          <h6><strong><p> 
+          <p>
+            Online Registration  Email 📧  at  <a href = "mailto: etcassets@gmail.com">etcassets@gmail.com</a>
+          </p></strong></h6>
+        <p> 
+          <h6>Faculty Co-ordinator: Prof.Mrs.A.A Shinde <a href="tel:8237300559"><br>(Call📞 8237300559</a>)</h6>
+        </p>
+        <p> 
+          <h6>Student Co-ordinator: Sushant Kamble <a href="tel:9552739398"><br>(Call📞9552739398 </a>)</h6>
+        </p>
+          
+        <p ><strong>Cash prize -🏆 1st prize- Rs.2000/-</strong> </p>
+        <p><strong>Cash prize -🏆 2st prize- Rs.1000/-</strong> </p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfY1GES43vNm0q2-sBnzoK8-Em2WaEnbp_DZyV7YNeB2MY-LQ/viewform" class="btn btn-primary" style="width: 100%;">Click   here to Register </a>
+   
+      </div>
+    </div>
+   
+  </div>
+  <div class="col-sm-3">
+      
+      
+  
+    <div class="card" style="border: 10px solid rgba(27, 100, 100, 0.849);">
+      <div class="card-body">
+        <h2 class="card-title" style="text-align: center;">CODE-O-FIESTA  </h2>
+        <img   style="width: 100%; height: 80%;" id= "sd" class="card-img-top" src="images/OIP.jpg" alt="Card image" style="width:60%">
+        <h4 class="card-title">Dept. of Electronics and Telecommunication Engineering</h4>
+        <h6> <strong>Theme: Online 'C' Programming Contest  </strong></h6>
+        <h6>Offline mode📌  Date 📅- 19 March, 2021 </h6>
+        <h5>Entry fees: 100/-</h5>
+        <h6><strong><p>
+        <p>
+          Online Registration  Email 📧  at  <a href = "mailto: code.o.fiesta2021@gmail.com">code.o.fiesta2021@gmail.com</a>
+        </p></strong></h6>
+      <p> 
+        <h6>Faculty Co-ordinator: Prof.Mrs.M.V.Gangapure <a href="tel:9921457902"><br>(Call📞9921457902</a>)</h6>
+      </p>
+      <p> 
+        <h6>Student Co-ordinator: Om Kapse <a href="tel:7758822997"><br>(Call📞7758822997 </a>)</h6>
+      </p>
+        
+    
+      <p ><strong>Cash prize -🏆 1st prize- Rs.2000/-</strong> </p>
+      <p><strong>Cash prize -🏆 2st prize- Rs.1000/-</strong> </p>
+      <a href="https://forms.gle/31F4wPgNHCJY4NR27" class="btn btn-primary" style="width: 100%;">Click   here to Register </a>
+    </div>
+  </div>
+  
+  </div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+        <div class="sec aboutus" style="margin-left: 20px;margin-top: 15px;">
+           
+            <h2 style="color: blanchedalmond;">Follow us on Social Media</h2>
+
+                <ul class="sci">
+                   <a href="https://instagram.com/kitcoek.official?igshid=9c4wo41pvaut"><i class="fa fa-instagram fa-3x" aria-hidden="true" style="height:180px;"></i></a> &ThickSpace;
+                   <a href="https://twitter.com/officialkitcoek?s=08"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a> &ThickSpace;
+                    <a href="https://www.linkedin.com/school/officialkitcoek"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a> &ThickSpace;
+                    <a href="https://youtube.com/c/OfficialKITCoEK"><i class="fa fa-youtube-play fa-3x" aria-hidden="true"></i></a> &ThickSpace;
+                </ul>
+                </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="sec contact" ></div>
+            <h2 style="color: blanchedalmond;margin-left: 20px; ">Contact Information</h2>
+            <ul class="info">
+                <li>
+                   <span style="color: rgb(20, 136, 145)";>Event Location: </span>
+                    <span style="color: blanchedalmond; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">KIT College of Engineering (An Autonomous Institute),kolhapur</span>  
+                </li>
+                <li>
+                    <span style="color: rgb(20, 136, 145)";>Call us on: </span>
+                    <p ><a href="tel:7779001192" style="color: blanchedalmond; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">7779001192</a></p>
+                </li>
+                <li>
+                    <span style="color: rgb(20, 136, 145)"> Mail: </span>
+                    <p><a href="mailto:kitcoek@gmail.com" style="color: blanchedalmond; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">kitcoek@gmail.com</a></p>    
+                </li>
+            </ul>
+        </div>
+        </div>
+       </div>           
+    </div>
+</footer>
+</body>
+</html>
